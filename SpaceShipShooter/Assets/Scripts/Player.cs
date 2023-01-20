@@ -6,15 +6,24 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 5f;
+    [Header("Camera Padding")]
     [SerializeField] private float paddingLeft;
     [SerializeField] private float paddingRight;
     [SerializeField] private float paddingTop;
     [SerializeField] private float paddingBottom;
 
+    [Header("Movement")]
+    [SerializeField] private float moveSpeed = 5f;
+
     private Vector2 rawInput;
     private Vector2 minBounds;
     private Vector2 maxBounds;
+    private Shooter shooter;
+
+    private void Awake()
+    {
+        shooter = GetComponent<Shooter>();
+    }
 
     private void Start()
     {
@@ -45,5 +54,13 @@ public class Player : MonoBehaviour
     private void OnMove(InputValue value)
     {
         rawInput = value.Get<Vector2>();
+    }
+
+    private void OnFire(InputValue value)
+    {
+        if (shooter != null)
+        {
+            shooter.isFiring = value.isPressed;
+        }
     }
 }

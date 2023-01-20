@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 4879650503798679789}
   - component: {fileID: 5097500069654156445}
   - component: {fileID: 1311546340437000974}
-  m_Layer: 0
+  - component: {fileID: 4784898497649206375}
+  m_Layer: 7
   m_Name: Enemy 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,6 +113,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
+--- !u!114 &4784898497649206375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959811090166656701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b194127ee409ae4ca35d8e13b6d6521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 3509379953899421545, guid: 6ea823a6df194b54ca35807ba929839b, type: 3}
+  projectileSpeed: 10
+  projectileLifeTime: 5
+  firingRate: 1
+  useAI: 1
+  isFiring: 0
 --- !u!1 &5108325358781664382
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,7 +141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3987155824790605585}
   - component: {fileID: 7859096300821725522}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: enemyBlack1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +203,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: f5e0938fb840dfa44b3964e8237d7a17, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
