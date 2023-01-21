@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4901761217331162238}
-  - component: {fileID: 8558143410640613621}
   - component: {fileID: 4134034867014015426}
   - component: {fileID: 4879650503798679789}
+  - component: {fileID: 8558143410640613621}
   - component: {fileID: 5097500069654156445}
   - component: {fileID: 1311546340437000974}
   - component: {fileID: 4784898497649206375}
@@ -38,18 +38,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8558143410640613621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 959811090166656701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42bb5f5f491f8054d8e619d8e36806eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &4134034867014015426
 Rigidbody2D:
   serializedVersion: 4
@@ -87,6 +75,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.004468024}
   serializedVersion: 2
   m_Radius: 0.32851124
+--- !u!114 &8558143410640613621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959811090166656701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42bb5f5f491f8054d8e619d8e36806eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5097500069654156445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   hitEffect: {fileID: 5039775771529279652, guid: 07adccb4bb529664486db0e84ecb55bb, type: 3}
+  applyCameraShake: 0
 --- !u!114 &1311546340437000974
 MonoBehaviour:
   m_ObjectHideFlags: 0
