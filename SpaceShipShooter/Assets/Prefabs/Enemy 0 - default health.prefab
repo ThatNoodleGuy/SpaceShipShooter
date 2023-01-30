@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1311546340437000974}
   - component: {fileID: 4784898497649206375}
   m_Layer: 7
-  m_Name: Enemy 0
+  m_Name: Enemy 0 - default health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6281b23f50133db4e91a658f9b54b03c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  isPlayer: 0
+  health: 40
+  score: 50
   hitEffect: {fileID: 5039775771529279652, guid: 07adccb4bb529664486db0e84ecb55bb, type: 3}
   applyCameraShake: 0
 --- !u!114 &1311546340437000974
@@ -132,7 +134,7 @@ MonoBehaviour:
   projectileLifeTime: 5
   baseFiringRate: 1
   useAI: 1
-  firingRateVariance: 0.5
+  firingRateVariance: 0.25
   minimumFiringRate: 0.1
   isFiring: 0
 --- !u!1 &5108325358781664382
@@ -146,7 +148,7 @@ GameObject:
   - component: {fileID: 3987155824790605585}
   - component: {fileID: 7859096300821725522}
   m_Layer: 7
-  m_Name: enemyBlack1
+  m_Name: EnemySprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

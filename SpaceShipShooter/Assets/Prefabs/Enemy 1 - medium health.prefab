@@ -63,9 +63,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5097500069654156445, guid: 244e9cfb3a4a41c48bc0ff908bc1adf3, type: 3}
+      propertyPath: score
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5097500069654156445, guid: 244e9cfb3a4a41c48bc0ff908bc1adf3, type: 3}
+      propertyPath: health
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5108325358781664382, guid: 244e9cfb3a4a41c48bc0ff908bc1adf3, type: 3}
+      propertyPath: m_Name
+      value: enemySprite
+      objectReference: {fileID: 0}
     - target: {fileID: 7859096300821725522, guid: 244e9cfb3a4a41c48bc0ff908bc1adf3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 75b94847c6463ff4ea6266c7931e12df, type: 3}
+      objectReference: {fileID: 21300000, guid: 0a4e4895376ba1a4b9933273450a196a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 244e9cfb3a4a41c48bc0ff908bc1adf3, type: 3}
